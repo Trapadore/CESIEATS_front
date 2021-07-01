@@ -1,7 +1,6 @@
-FROM node:13-alpine
+FROM image-registry.openshift-image-registry.svc:5000/openshift/nodejs 
 
 # Create srv directory
-WORKDIR /srv/api
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -21,4 +20,4 @@ ENV NODE_ENV development
 COPY . .
 
 EXPOSE 8080
-CMD [ "npm", "run", "serve" ]
+CMD [ "npm", "serve" ]
