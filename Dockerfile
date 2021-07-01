@@ -20,4 +20,4 @@ ENV NODE_ENV development
 COPY . .
 
 EXPOSE 8080
-CMD [ "npm", "serve" ]
+CMD [ "npm", "run", "serve" ]
