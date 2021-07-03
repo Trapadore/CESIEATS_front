@@ -91,7 +91,7 @@ export default {
         };
 
         axios(config)
-            .then(function (response) {
+            .then(function () {
               // console.log(JSON.stringify(response.data));
             })
             .catch(function (error) {
