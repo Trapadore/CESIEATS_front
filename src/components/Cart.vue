@@ -10,7 +10,7 @@
                             <v-row>
                                 <v-col align-self="start">
                                     <img
-                                        :src="'data:image/jpeg;base64,' + article.image"
+                                        :src="article.image"
                                         alt="Girl in a jacket"
                                         width="100%"
                                     />
