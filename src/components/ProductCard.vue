@@ -15,7 +15,7 @@
                                     v-model="value"
                                 ></v-select>
                             </v-card-title>
-                            <img :src="'data:image/jpeg;base64,' + image" alt="Girl in a jacket" width="100%" />
+                            <img :src="image" alt="Girl in a jacket" width="100%" />
                         </v-card>
                     </v-hover>
                 </v-col>
