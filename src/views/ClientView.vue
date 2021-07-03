@@ -26,17 +26,10 @@
             </v-navigation-drawer>
         </v-col>
         <v-col>
-            <v-container v-if="menu === 'Profil'">
-                <Profil />
-            </v-container>
-            <v-container v-if="menu === 'Sécurité'">
-                <Security />
-            </v-container>
-            <v-container v-if="menu === 'Commandes'">
-                <Orders />
-            </v-container>
-            <v-container v-if="menu === 'Panier'">
-                <Cart @location="move" />
+            <v-container>
+                <Profil v-if="menu === 'Profil'" />
+                <Orders v-if="menu === 'Commandes'" />
+                <Cart v-if="menu === 'Panier'" @location="move" />
             </v-container>
         </v-col>
         <v-snackbar v-model="snackbar">
@@ -51,24 +44,22 @@
 
 <script>
 import Profil from "../components/Profil";
-import Security from "../components/Security";
 import Orders from "../components/Orders";
 import Cart from "../components/Cart";
 import { mapState } from "vuex";
 
 export default {
-    components: { Cart, Orders, Security, Profil },
+    components: { Cart, Orders, Profil },
     data: () => ({
         user: {
             email: "notConnected@connexion.fr",
             id: 0,
         },
         drawer: null,
-        text: "Votre commande a été envoyé avec succès",
+        text: "Votre commande a été envoyée avec succès",
         snackbar: false,
         links: [
             ["mdi-account", "Profil"],
-            ["mdi-lock", "Sécurité"],
             ["mdi-basket", "Commandes"],
             ["mdi-cart", "Panier"],
         ],
@@ -88,6 +79,7 @@ export default {
     methods: {
         move() {
             this.menu = "Commandes";
+            this.snackbar = true;
         },
         clickList(key) {
             this.menu = key;

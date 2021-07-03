@@ -4,18 +4,18 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    identity: {
-      lastName: String,
-      firstName: String,
-      mail: "caca.boudin@gmail.com",
-      gender: String,
-      password: String,
+    state: {
+        identity: {
+            lastName: String,
+            firstName: String,
+            mail: "caca.boudin@gmail.com",
+            gender: String,
+            password: String,
+        },
+        cart: [],
     },
-    cart: [],
-  },
-  mutations: {},
-  getters: {},
-  actions: {},
-  modules: {},
+    mutations: {},
+    getters: {},
+    actions: {},
+    modules: {},
 });
