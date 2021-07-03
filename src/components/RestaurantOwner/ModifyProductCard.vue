@@ -76,7 +76,7 @@ export default {
 
         var config = {
           method: 'put',
-          url: 'http://localhost:9000/products/'+ this.product._id,
+          url: 'http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/products/'+ this.product._id,
           headers: {
             'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNTAzOTQ1OH0.3kbYJEZeYu6qPHVurBxwSyeWMcunt5hvU1wyDSIErqI',
             'Content-Type': 'application/json'
@@ -101,7 +101,7 @@ export default {
 
         var config = {
           method: 'delete',
-          url: 'http://localhost:9000/products/'+ this.product._id,
+          url: 'http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/products/'+ this.product._id,
           headers: {
             'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNTAzOTQ1OH0.3kbYJEZeYu6qPHVurBxwSyeWMcunt5hvU1wyDSIErqI',
             'Content-Type': 'application/json'

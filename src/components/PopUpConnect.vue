@@ -173,7 +173,7 @@ export default {
 
           var config = {
             method: 'post',
-            url: 'http://localhost:9000/users',
+            url: 'http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/users',
             headers: {
               'Content-Type': 'application/json'
             },
@@ -196,7 +196,7 @@ export default {
             });
             var config = {
                 method: "post",
-                url: "http://localhost:9000/auth",
+                url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/auth",
                 headers: {
                     Authorization: "Basic " + Base64.encode(this.email + ":" + this.password),
                     "Content-Type": "application/x-www-form-urlencoded",

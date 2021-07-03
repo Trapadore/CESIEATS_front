@@ -77,7 +77,7 @@ export default {
 
             var config = {
                 method: "put",
-                url: "http://localhost:9000/operations/" + order._id,
+                url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/operations/" + order._id,
                 headers: {
                     Authorization:
                         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNDg4NjY4NX0.WH3i950TXrd_9mmPeT9KxaVlNKFgAhlJHtZxH-Fhqoo",
@@ -107,7 +107,7 @@ export default {
 
             var config = {
                 method: "put",
-                url: "http://localhost:9000/operations/" + order._id,
+                url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/operations/" + order._id,
                 headers: {
                     Authorization:
                         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNDg4NjY4NX0.WH3i950TXrd_9mmPeT9KxaVlNKFgAhlJHtZxH-Fhqoo",
@@ -133,7 +133,7 @@ export default {
         var data = qs.stringify({});
         var config1 = {
             method: "get",
-            url: "http://localhost:9000/restaurants/owner/" + JSON.parse(localStorage.user).id,
+            url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/restaurants/owner/" + JSON.parse(localStorage.user).id,
             headers: {
                 Authorization:
                     "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNDg4NjY4NX0.WH3i950TXrd_9mmPeT9KxaVlNKFgAhlJHtZxH-Fhqoo",
@@ -156,7 +156,7 @@ export default {
             var data = qs.stringify({});
             var config2 = {
                 method: "get",
-                url: "http://localhost:9000/operations/byrestaurant/" + val._id + "/bystate/2",
+                url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/operations/byrestaurant/" + val._id + "/bystate/2",
                 headers: {
                     Authorization:
                         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNDg4NjY4NX0.WH3i950TXrd_9mmPeT9KxaVlNKFgAhlJHtZxH-Fhqoo",

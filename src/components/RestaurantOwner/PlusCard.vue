@@ -82,7 +82,7 @@ export default {
         });
         var config = {
           method: 'post',
-          url: 'http://localhost:9000/products/',
+          url: 'http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/products/',
           headers: {
             'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNTAzOTQ1OH0.3kbYJEZeYu6qPHVurBxwSyeWMcunt5hvU1wyDSIErqI',
             'Content-Type': 'application/json'

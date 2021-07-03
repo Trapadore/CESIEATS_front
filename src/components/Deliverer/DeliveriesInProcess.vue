@@ -65,7 +65,7 @@ export default {
         var data = qs.stringify({});
         var config = {
             method: "get",
-            url: "http://localhost:9000/restaurants/",
+            url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/restaurants/",
             headers: {
                 Authorization:
                     "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNDg4NjY4NX0.WH3i950TXrd_9mmPeT9KxaVlNKFgAhlJHtZxH-Fhqoo",
@@ -86,7 +86,7 @@ export default {
         data = qs.stringify({});
         config = {
             method: "get",
-            url: "http://localhost:9000/operations/bystate/4",
+            url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/operations/bystate/4",
             headers: {
                 Authorization:
                     "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNDg4NjY4NX0.WH3i950TXrd_9mmPeT9KxaVlNKFgAhlJHtZxH-Fhqoo",
@@ -127,7 +127,7 @@ export default {
 
             var config = {
                 method: "put",
-                url: "http://localhost:9000/operations/" + JSON.parse(operation)._id,
+                url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/operations/" + JSON.parse(operation)._id,
                 headers: {
                     // eslint-disable-next-line prettier/prettier
                     'Authorization':

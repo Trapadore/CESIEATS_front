@@ -95,7 +95,7 @@ export default {
 
         var config = {
             method: "get",
-            url: "http://localhost:9000/operations/byuser/60d9de536f095a670c9e1eed",
+            url: "http://cesieats-api-vazvi-dev.apps.sandbox.x8i5.p1.openshiftapps.com/operations/byuser/60d9de536f095a670c9e1eed",
             headers: {
                 Authorization:
                     "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZDliYmExZGZjZWNkOGQ3YzNkNjljZiIsImlhdCI6MTYyNDg4NjY4NX0.WH3i950TXrd_9mmPeT9KxaVlNKFgAhlJHtZxH-Fhqoo",
